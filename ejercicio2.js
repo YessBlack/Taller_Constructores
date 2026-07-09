@@ -9,8 +9,8 @@ function Mascota(nombre, especie, edad, peso) {
     return `
       - Paciente: ${this.nombre}
       - Especie: ${this.especie}
-      - Paciente: ${this.edad}
-      - Peso: ${this.peso}
+      - Edad: ${this.edad}
+      - Peso: ${this.peso} kg
     `
   }
 }

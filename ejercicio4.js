@@ -3,7 +3,7 @@ function Libro(nombre, autor, anio, editorial, ISBN) {
   this.nombre = nombre
   this.autor = autor
   this.anio = anio
-  this.editorial
+  this.editorial = editorial
   this.ISBN = ISBN
   this.estaPrestado = false
 
@@ -14,7 +14,7 @@ function Libro(nombre, autor, anio, editorial, ISBN) {
       return
     }
 
-    console.log(`El Libro ${this.nombre} se encuentra prestado`)
+    console.log(`No se puede prestar el libro ${this.nombre}: ya se encuentra prestado`)
   }
 
   this.devolver = function () {
@@ -24,7 +24,7 @@ function Libro(nombre, autor, anio, editorial, ISBN) {
       return
     }
 
-    console.log(`El Libro ${this.nombre} ya se encontraba disponbile`)
+    console.log(`No se puede devolver el libro ${this.nombre}: ya se encontraba disponible`)
   }
 }
 
